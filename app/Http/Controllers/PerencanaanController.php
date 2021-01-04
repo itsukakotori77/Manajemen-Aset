@@ -213,4 +213,9 @@ class PerencanaanController extends Controller
 
         return redirect('/perencanaan')->with('message', 'Perencanaan berhasil dihapus');
     }
+
+    public function ubahStatus($id)
+    {
+        $perencanaan = Perencanaan::find($id);
+    }
 }

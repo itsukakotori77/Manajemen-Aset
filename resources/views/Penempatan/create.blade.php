@@ -34,9 +34,15 @@
                 <div class="pull-left">
                     <h4 class="text-blue h4">{{ 'Penempatan Aset' . ' ' . $data['aset']->Nama_Aset }}</h4>
                 </div>
-                <div class="pull-right">
-                    <a href="{{ url('/penempatan') }}" class="btn btn-info btn-sm"><strong>KEMBALI</strong></a>
-                </div>
+                @if(Request::is('/penempatan/create'))
+                    <div class="pull-right">
+                        <a href="{{ url('/penempatan') }}" class="btn btn-info btn-sm"><strong>KEMBALI</strong></a>
+                    </div>
+                @else
+                    <div class="pull-right">
+                        <a href="{{ url('/aset/data/masuk') }}" class="btn btn-info btn-sm"><strong>KEMBALI</strong></a>
+                    </div>
+                @endif
             </div>
             <div class="pb-20" style="margin-top: 30px;">
                 <div class="container">

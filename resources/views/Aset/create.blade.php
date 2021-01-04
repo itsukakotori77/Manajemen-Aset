@@ -25,7 +25,7 @@
                     <h4 class="text-blue h4">Data Aset</h4>
                 </div>
                 <div class="pull-right">
-                    <a href="{{ url('/aset') }}" class="btn btn-info btn-sm"><strong>KEMBALI</strong></a>
+                    <a href="{{ url('/aset/data/masuk') }}" class="btn btn-info btn-sm"><strong>KEMBALI</strong></a>
                 </div>
             </div>
             
